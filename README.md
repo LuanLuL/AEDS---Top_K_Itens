@@ -1,11 +1,17 @@
  <section>   
     <h1>📢 AEDS: Top K itens</h1>   
     <p>
-        Criado em Agosto de 2023, o projeto <strong>Top K itens</strong> foi desenvolvido em virtude de atender as demandas do curso de Algoritimo e Estrutura de Dados, ministrado pelo professor <a href="https://www.linkedin.com/in/michelpiressilva/?originalSubdomain=br" target="_blank">Michel Pires Da Silva</a> no Centro Federal de Educação Tecnológica de Minas Gerais (<a href="https://www.divinopolis.cefetmg.br/" target="_blank">CEFET-MG</a>).
+        Criado em Agosto de 2023, o projeto <strong>Top K itens</strong> foi desenvolvido em virtude de atender as demandas do curso de Algoritimo e Estrutura de Dados II, ministrado pelo professor <a href="https://www.linkedin.com/in/michelpiressilva/?originalSubdomain=br" target="_blank">Michel Pires Da Silva</a> no Centro Federal de Educação Tecnológica de Minas Gerais (<a href="https://www.divinopolis.cefetmg.br/" target="_blank">CEFET-MG</a>).
     </p>
 </section>
 <section>
     <h2>🛠 Problemática</h2>
+    <p>
+        O problema dos top <i>K</i> itens consite em descobrir os elemtentos mais valiosos de uma coleção de dados. Nesse projeto, essa discução é empregada com o objetivo de encontrar as <i>K</i> palavras mais significativas em um conjunto de textos, sendo <i>K</i> número de palavras a serem consideradas. Assim dizendo, a relevânvia de cada elemento é avaliada de acordo com a quantidade de vezes em que aparece nos dados.  
+    </p>
+    <p>
+            É importante ressaltar que a coleção de arquivos passada como entrada devem conter textos sem nenhuma formatação ("arquivo ASCII") onde cada palavra é vista como uma sequência de letras delimitada por espaço em branco, “coluna da esquerda”, “coluna da direita” e símbolos de pontuação (".","?", "!", etc).
+    </p>
 <section>
 <section>
     <h2>📩 Arquivos</h2>

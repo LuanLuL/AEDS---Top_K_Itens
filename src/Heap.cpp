@@ -78,9 +78,9 @@ void Heap::remove(){
 
 void Heap::print(int K){
     cout << "\n---------- TOP " << K << " itens ----------\n\n";
-    cout << "WORD\\FREQUENCY\n" << endl;
+    cout << "0\t" "WORD\\FREQUENCY\n" << endl;
     for(short int i = 0; i < K; i++){
-        cout << this->heap[i].first << "\\" << this->heap[i].second << endl;
+        cout << i+1 << "\t" << this->heap[i].first << "\\" << this->heap[i].second << endl;
     }
     cout << "\n----------------------------------\n";
 }
