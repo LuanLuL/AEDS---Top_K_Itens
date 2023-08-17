@@ -15,6 +15,18 @@
 <section>
 <section>
     <h2>📩 Arquivos</h2>
+    <p>
+        Para que o programa de computador apresente uma conduta uniforme para todos os usuarios, foi estabelecido regras para organizar a entrada de dados. Por conseguinte, todos os arquivos tem de ser .txt, ou seja, arquivos de texto que não contém formatação. Além disso, os arquivos devem possuir a nomeclartura especifica, na qual seus nome precisam ser definidos como “input<i>N<i>”, em que <i>N<i> é a ordem de entrada. Observe a Figura 1 para melhor entendimento.
+    </p>
+    <p align="center">
+        <img src="img/img1.png">
+        <br><br><strong>Figura 2:</strong> Exemplo de como inserir arquivos de entrada
+    </p>
+    <br>
+    <p>
+        Ademais, é necessário que todos os arquivos sejam armazenados dentro da pasta <i>./dataset</i>. Por ultimo, para realizar a inserção de dados é necessario modificar a constante <i>FILES</i>, definida na linha 8 do <a href="https://github.com/LuanLuL/AEDS---Top_K_Itens/blob/main/src/main.cpp" target="_blank">main.cpp</a>; o valor de <i>FILES</i> deve ser igual a quantidade de inputs presentes. 
+    </p>
+    <b>OBSERVAÇÃO:</B> Não exlua ou altere o nome do arquivo "stopwords.txt".
 </section>
 <section>
     <h2>♟ Implementação</h2>
@@ -34,6 +46,37 @@
             <p>O WSL é um método para se executar o Sistema Operaciona Linux dentro do Windows de forma muito facil. Essa platoforma se torna essencial para o desenvovimento em ambiente GNU Linux, evitando tarefas como a intalação de maquinas vituais, criação de dual booting no computador pessoal e entre outras coisas. Além disso, existem diversas vantagens como rodar programas em conjunto e compartihamento de localhost. Segue em anexo um  tutorial de download do WSL2 — <a href="https://youtu.be/hd6lxt5iVsg" target="_blank">Tutorial WSL2</a>.</p>
         </li>
     </ul>
+    <p>
+        O programa ainda possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+    </p>
+    <div align="center">
+        <table>
+            <thead>
+                <tr>
+                    <th>Comando</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>make clean</code></td>
+                    <td>Apaga a última compilação realizada contida na pasta build</td>
+                </tr>
+                <tr>
+                    <td><code>make</code></td>
+                    <td>Executa a compilação do programa utilizando o gcc, e o resultado vai para a pasta build</td>
+                </tr>
+                <tr>
+                    <td><code>make run</code></td>
+                    <td>Executa o programa da pasta build após a realização da compilação</td>
+                </tr>
+            </tbody>
+        </table>
+        <p align="center">
+            <b>Tabela 1:</b> Comandos úteis para compilar e executar o programa de computador
+        </p>
+    </div>
+    <p>
 </section>
 <section>
     <h2>🙌 Resultado Final</h2>
