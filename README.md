@@ -73,7 +73,7 @@
         </li>
     </ul>
     <p>
-        Com um entendimento das principais estruturas de dados frequentemente empregadas para abordar a problemática, foi possível elaborar uma estratégia que otimiza o tempo computacional. No entanto, essa abordagem resulta em uma demanda substancial por armazenamento em memória, representando um compromisso entre a eficiência do processamento e a utilização elevada de recursos de memória. Observe a tatica implementada na Figura 2.
+        Com um entendimento das principais estruturas de dados frequentemente empregadas para abordar a problemática, foi possível elaborar uma estratégia que otimiza o tempo computacional. No entanto, essa abordagem resulta em uma demanda substancial por armazenamento em memória, representando um compromisso entre a eficiência do processamento e a utilização elevada de recursos de memória. Observe a tática implementada na Figura 2.
     </p>
     <p align="center">
         <img src="img/img2.png">
@@ -86,10 +86,10 @@
         Ao dispor de um conjunto completo de palavras, juntamente com suas respectivas frequências de ocorrência nos inputs, uma abordagem eficaz para a identificação dos K itens mais relevantes consiste em armazenar essas informações em uma Max Heap. Nessa estrutura, a prioridade é estabelecida com base no número de ocorrências das palavras, possibilitando uma recuperação eficaz dos itens mais frequentes.
     </p>
     <p>
-        Sendo assim, é criada uma heap para acomodar elementos do tipo <code>pair(string, int)</code>, em que <code>pair.first</code> representa a palavra e <code>pair.second</code> denota a frequência associada a cada palavra. Com base nisso, a questão é solucionada, visto que podemos empregar as propriedades da heap para localizar os itens de maior prioridade
+        Sendo assim, é criada uma heap para acomodar elementos do tipo <code>pair(string, int)</code>, em que <code>pair.first</code> representa a palavra e <code>pair.second</code> denota a frequência associada a cada palavra. Com base nisso, a questão é solucionada, visto que podemos empregar as propriedades da heap para localizar os itens de maior prioridade.
     </p>
     <p>
-        Portanto, a Max Heap surge como uma ferramenta crucial na consecução desse objetivo. No entanto, é importante ressaltar que essa estratégia pode consumir uma quantidade significativa de memória, pois a heap irá conter todas as palavras de conteudo presentes nos inputs de entrada.
+        Portanto, a Max Heap surge como uma ferramenta crucial na consecução desse objetivo. No entanto, é importante ressaltar que essa estratégia pode consumir uma quantidade significativa de memória, pois a heap irá conter todas as palavras de conteúdo presentes nos inputs de entrada.
     </p>   
 </section>
 <section>
@@ -141,7 +141,47 @@
 </section>
 <section>
     <h2>🙌 Resultado Final</h2>
-
+    <p>
+        Diante do exposto, é evidente que o programa de computador delineado neste repositório tem a capacidade de identificar as top K palavras mais frequentes. Conforme ilustrado no diagrama de sequência na Figura 2, os principais métodos do algoritmo contribuem, em média, para um custo assintótico expresso como:
+        <p align="center">
+            <i><strong>I × (T + n x S)</i>,</strong>
+        </p>
+        onde <i>I</i> corresponde ao número de inputs de entrada, <i>T</i> representa o custo associado à tokenização do arquivo de entrada e <i>(n x S)</i> indica o tempo necessário para verificar se uma palavra é uma stopword, sendo <i>S</i> a quantidade de stopwords. Além disso, deve ser somado custo linear de criar a Max Heap.
+    </p>
+    <p>
+        Tendo <i>K = 20</i>, é possivel visualizar logo abaixo o resultado alcançado a partir das entradas presentes no <a href="https://github.com/LuanLuL/AEDS---Top_K_Itens/tree/main/dataset">conjunto teste de dados</a> disponibilizado:
+        <pre>
+---------- TOP 20 itens ----------
+    0       WORD\FREQUENCY
+    1       ainda\768
+    2       assim\610
+    3       tudo\753
+    4       aqui\508
+    5       pode\606
+    6       vez\500
+    7       homem\537
+    8       duas\299
+    9       outros\495
+    10      tempo\495
+    11      outro\582
+    12      dia\476
+    13      agora\478
+    14      onde\375
+    15      bem\450
+    16      gente\268
+    17      talvez\233
+    18      coisa\384
+    19      dizer\374
+    20      mundo\331
+----------------------------------
+        </pre>
+    </p>
+    <p>
+        É fundamental destacar que a resposta não segue nenhuma ordem predefinida, consistindo apenas na exibição dos primeiros K elementos da Max Heap. Destaca-se ainda que o  valor de <i>K</i> é definido pelo parametro da função <code>Heap::print(int K)</code>.
+    </p>
+    <p>
+        Portanto, ao examinarmos o desempenho do algoritmo, conclui-se que o custo é primordialmente impactado pela complexidade da tokenização e pela verificação de stopwords. No que se trata à etapa de identificação dos elementos mais frequentes, não há dificuldade associada, uma vez que as propriedades da Max Heap garantem eficazmente esse processo.
+    </p>
 </section>
 <section>
     <hr size="0.5">
