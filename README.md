@@ -47,7 +47,7 @@
                     Neste projeto, a estutura de tabela hash escolhida foi a classe <a href="https://cplusplus.com/reference/unordered_map/unordered_map/" target="_blank"> std::unordered_map</a> da biblioteca padrão C++, a qual é uma boa opção para grandes conjuntos de dados em que a ordem de inserção não faz diferença. Apensar de ser uma estrtura simples de usar, suas funções podem variar de acordo com o compilador utilizado.
                 </p>
                 <p>
-                    No caso do GCC (compilador empregado nesse sistema), o unordered_map é considerado uma hash aberta, cuja a função de transformação é uma técnica chamada "hash combinado" que envolve a aplicação de uma série de operações de mistura (bitwise XOR, shift e multiplicação) para espalhar bem os bits da chave original e minimizar as chances de colisões.
+                    No caso do GCC (compilador empregado nesse sistema), o unordered_map é considerado uma hash aberta, cuja a função de transformação usado para strings é "MurmurHash". O algoritmo MurmurHash converte a entrada em um valor de hash de 32 ou 64 bits, operando em blocos de dados e é projetado para ser rápido em produzir uma boa distribuição de valores de hash. 
                 </p>
                 <p>
                     Enfim, com as condições adequadas ao conjunto de dados, o custo de uma tabela hash pode alcançar tempos de <b><i>θ( 1 )</i></b>, o qual se refere ao melhor tempo de execução/melhor caso. Em um caso médio teremos algo próximo de <b><i>θ( 1+N / T )</i></b> e no pior caso <b><i>θ( n )</i></b>.
